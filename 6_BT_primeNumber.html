@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>primeNumber</title>
+</head>
+<body>
+    <script>
+       var count =0;
+       var prime=1;
+       do{
+           prime++;
+           if(isprime(prime)){
+               document.write(prime +' is Prime number'+'<br>')
+               count++;
+           }
+
+       }while (count<21)
+        function isprime(prime) {
+            for( i =2; i<(prime/2+1);i++){
+                if(prime % i == 0)
+                    return false
+            }
+            return true
+
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>
